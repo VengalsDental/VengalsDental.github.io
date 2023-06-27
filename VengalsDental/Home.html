@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            height: 100vh; /* Sets the height of the body to the full viewport height */
+            max-width: 100%;
+            overflow: auto;
+
+            margin: 0; /* Remove default body margin */
+            background-color: #ffffff; /* Set the background color */
+
+            scrollbar-width: thin;
+            scrollbar-color: #ff0000 #0000ff;
+            /* background-image: url("BG-Blue_Final.png");  Set the background image */
+        }
+        .headbanner {
+            width: 100%; /* Make the container span the entire width of the screen */
+            height: 15%;
+            padding: 0px; /* Optional: Add padding to create some spacing */
+            z-index: 1;
+        }
+        .fullbody {
+            height:220%;
+            width: 99%;
+            max-width: 100%;
+            margin: 1%;
+        }
+        .footer{
+            position: absolute;
+            left: 0%;
+            bottom: -300%;
+
+            background-color: #ffffff;
+            margin: 0%;
+            padding: 0%;
+
+            height: 30%;
+            width: 100%;
+        }
+        .section{
+            position: relative;
+        }
+        .font{
+            font-family: 'Open Sans', sans-serif;
+        }
+        img{
+            width: 100%;
+            height: auto
+        }
+        button {
+            cursor: pointer;
+            outline: 0;
+            color: #fff;
+            background-color: transparent;
+            border-color: transparent;
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            border: 1px solid transparent;
+            padding: 6px 12px;
+            font-size: 16px;
+            border-radius: .25rem;
+        }
+        button:hover {
+                color: rgb(0, 0, 0);
+                background-color: #23caa0;
+                border-color: #26fac5;
+                transition: color .25s ease-in-out, background-color .25s ease-in-out, border-color .25s ease-in-out, box-shadow .25s ease-in-out;
+        }
+        button:active{
+            color: rgb(0, 0, 0);
+            background-color: #000000;
+            border-color: #ffffff;
+        }
+        button-2{
+            cursor: pointer;
+            outline: 0;
+            color: #fff;
+            background-color: transparent;
+            border-color: transparent;
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            border: 1px solid transparent;
+            padding: 6px 12px;
+            font-size: 16px;
+            border-radius: .25rem;
+        }
+    </style>
+
+    <title>VENGAL'S DENTAL</title>
+    
+</head>
+    
+<body>
+    
+    <div class="headbanner";> 
+        <button-2 style="position: absolute; top: 2%; left: 2.5%">
+                <a href="" style="text-decoration: none; border: none; color:rgb(85, 78, 78);" target="/blank">
+                    <div class="font"> <h1>VENGAL'S DENTAL</h1> </div>
+                </a>
+        </button-2>
+
+        <button id="copyButton" style="position: absolute; top: 6%; right: 6%" onclick="copyPhoneNumber()">
+            <a href="https://www.instagram.com/" style="text-decoration: none; border: none; color:rgb(85, 78, 78);" target="/blank">
+                <div class="font"> Contact us</div>
+            </a>
+        </button>
+
+    </div>
+
+    <div class="fullbody">
+        <div class="font"; style="color: rgb(255, 255, 255);"> <h3>Welcome to Vengal's Dental Clinic!</h3> 
+            <h4>At Vengal's Dental Clinic, we are dedicated to providing exceptional dental care for patients of all ages. 
+                Our team of highly skilled and compassionate dentists
+                and support staff are committed to creating a comfortable and welcoming environment 
+                where you can receive top-quality dental services.</h4>
+                <h3>SERVICES</h3>
+                <p>Orthodontics<br>DenturesDentures<br>VeneersVeneers<br>Root CanalRoot Canal<br>Prosthodontics<br>
+                <h4>Oral SurgeryOral Surgery<br>Endodontics
+        </div>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.
+        8773337222!2d76.54110415177747!3d9.443491221659228!2m3!1f0!2f0!3f0!3m2!1i10
+        24!2i768!4f13.1!3m3!1m2!1s0x3b06260b8b1d7029%3A0x4b5cc77a9a193fb8!2sVengal&#39;
+        s%20Orthodontic%20Speciality%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1685211786335
+        !5m2!1sen!2sin" width="70%" height="40%" style="border:0; position: absolute; top: 30%; left: 25%;" allowfullscreen="" 
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </div>
+    <img src="vengal-orthodontic-speciality-dental-clinic-changanacherry-kottayam-dentists-7848y1w3dq.jpg" alt="Italian Trulli" style="position:absolute; top:15%; left: 0%; opacity: 0.9; z-index: -1;" >
+    <img src="vengal-orthodontic-speciality-dental-clinic-changanacherry-kottayam-dentists-bqsgvbih12.jpg" alt="Italian Trulli" style="position:absolute; top:140%; left: 0%; opacity: 0.9; z-index: -1;" >
+    <div class="footer" style="position: relative; left: 0%; top: 100%;height: 20%; width: 100%; background-color: rgb(62, 52, 52); z-index: 0;">
+    </div>
+
+    <script>
+        function copyPhoneNumber() {
+          var phoneNumber = "1234567890"; // Replace with your desired phone number
+          
+          var tempInput = document.createElement("input");
+          tempInput.value = phoneNumber;
+          document.body.appendChild(tempInput);
+          
+          tempInput.select();
+          document.execCommand("copy");
+          
+          document.body.removeChild(tempInput);
+          
+          alert("Phone number copied to clipboard: " + phoneNumber);
+        }
+        </script>
+</body>
+</html>
